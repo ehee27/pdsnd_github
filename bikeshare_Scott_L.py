@@ -37,7 +37,6 @@ def user_inputs():
 
 # Filter by Month
     while True:
-        filters = ['month','day','all','none']
         print_sleep("\nLet's filter our data. We can do this by month, day or both.")
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = input("\nWe'll use the first 6 months: January, February, March, April, May, June.\n\nPlease select a month, or choose all:\n").lower()
