@@ -7,10 +7,13 @@ Initial creation: 8/23/21
 Exploring Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+User selects and city and whether to filter by month, day or all. We'll then build the dataframe according to their selections and answer questions based off 4 subsets of data... times, stations, trips and user data.
 
 ### Files used
-Include the files used
+bikeshare_Scott_L.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
