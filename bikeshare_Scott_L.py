@@ -21,7 +21,7 @@ days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sun
 # print the messages and sleep
 def print_sleep(message_to_print):
     print(message_to_print)
-    time.sleep(2.5)
+    time.sleep(2)
 
 def intro():
     print_sleep("Let's explore some US bikeshare data!")
