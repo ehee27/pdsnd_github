@@ -13,6 +13,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+# Filters lists
+cities = ['chicago','new york city','washington']
+months = ['january', 'february', 'march', 'april', 'may', 'june']
+days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+
 # print the messages and sleep
 def print_sleep(message_to_print):
     print(message_to_print)
@@ -26,7 +31,6 @@ def intro():
 def user_inputs():
 # Choose a City
     while True:
-        cities = ['chicago','new york city','washington']
         city = input("\nWhich city would you like to explore?").lower()
         if city in cities:
             print_sleep(city.title() + " it is.")
@@ -38,7 +42,6 @@ def user_inputs():
 # Filter by Month
     while True:
         print_sleep("\nLet's filter our data. We can do this by month, day or both.")
-        months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = input("\nWe'll use the first 6 months: January, February, March, April, May, June.\n\nPlease select a month, or choose all:\n").lower()
         if month in months:
             print_sleep("\nCool, let's look more closely at " + month.title() + ".")
@@ -52,7 +55,6 @@ def user_inputs():
 
 # Filter by Day
     while True:
-        days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
         day = input("\nWould you also like to filter by day of the week: Monday - Sunday.\nPlease select a day of the week, or choose all:\n").lower()
         if day in days:
             print_sleep("\nOkay, " + day.title() + " is our chosen day.")
